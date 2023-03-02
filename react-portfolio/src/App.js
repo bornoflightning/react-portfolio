@@ -70,17 +70,17 @@ const renderPage = (page) => {
     //   </header>
     // </div>
     <BrowserRouter>
-    <div className="app">
-    <Header
-      setPage = {setPage}
-      NavLink={ NavLink}
-    />
-    <Handler
-      page= {page} renderPage= { renderPage }
-    />    
-    <Footer />
-    </div>
-  </BrowserRouter>
+      <div className="app">
+      <Header
+        setPage = {setPage}
+        NavLink={ NavLink}
+      />
+      <Handler
+        page= {page} renderPage= { renderPage }
+      />    
+      <Footer />
+        </div>
+    </BrowserRouter>
 
   );
 }
