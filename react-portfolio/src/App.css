@@ -59,6 +59,7 @@ header {
   height: 12vh;
   background-color:var(--night);
   padding-top: -1em;
+  margin: auto;
   margin-top: -1.5em;
   display: flex;
   flex-direction: row;
@@ -66,6 +67,7 @@ header {
   text-align: center;
   align-items: center space;
   justify-content: space-between;
+  
 }
 
 .headerStuff {
@@ -173,21 +175,25 @@ footer {
 
 .Skills {
   display: flex;
-  margin: 2em;
+  margin: 3em;
   justify-content: center;
+  flex-wrap: wrap;
   
 }
 
 .Tech {
   margin-left: 3em;
+  margin-bottom: 3em;
 }
 
 .Finance {
   margin-left: 3em;
+  margin-bottom: 3em;
 }
 
 .Languages {
   margin-left: 3em;
+  margin-bottom: 3em;
 }
 
 h1, h2, h3 {
@@ -327,4 +333,58 @@ h1, h2, h3 {
 
 
 
+@media (max-width: 970px) {
 
+  body {
+    font-size: x-small;
+  }
+  
+  .topName {
+    margin: 0.5em;
+  }
+
+  header {
+    flex-direction: column;
+    margin-bottom: 10em;
+    align-items: center;
+  }
+
+  .aboutMe {
+    flex-direction: column;
+    align-items: center;
+  }  
+
+  .selfie {
+  border-radius: 50%;
+  }
+
+  footer {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .markImage, .linkedIn, .Stack {
+    width: 2em;
+    height: 2em;
+    padding-left: 1em;
+    padding-right: 2em;
+    margin-bottom: -1em;
+    
+  }
+
+  .markImageFooter, .linkedInFooter, .StackFooter {
+    width: 2em;
+    height: 2em;
+    padding-left: 1em;
+    padding-right: 2em;
+    margin-bottom: -1em;
+    
+  }
+
+  .block, .ulClass {    
+    
+    padding: 1.5em;
+    min-height: 70%;
+    margin-bottom: 1em;
+  }
+}
